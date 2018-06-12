@@ -18,4 +18,4 @@
   Once this button is clicked, generate random power for hero and remove/hide both the input and button (added in the previous two steps) from the DOM.
   Looping though the array of monsters, style the display message such that if the monster's power is greater than hero's, add danger styling.</p>
 
-  <p *ngFor="let arr of arr; index as i;" [ngClass]="{'background-green' : i>=9}" [ngStyle]="{'color': i>=9 ? 'white': 'black'}">{{ arr.time }} {{ arr.state}} {{i}}</p>
+  <p *ngFor="let arr of arr; index as i;" [ngClass]="{'background-green' : i>=9}" [ngStyle]="{'color': i>=9 ? 'white' : 'black'}">{{ arr.time }} {{ arr.state}} {{i}}</p>
