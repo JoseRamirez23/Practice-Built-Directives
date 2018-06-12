@@ -13,16 +13,16 @@ export class AppComponent {
 
   show :boolean = false;
 
-  arr:any=[ ];
+  array:any=[ ];
   time:string='';
   state:string='';
 
   displayText(){
 
-    if(this.show === false){
+    if(this.show === !this.show){
       this.show = true;
     }else{
-      this.show = false;
+      this.show = !this.show;
 
     }
     this.pushArr();
@@ -30,7 +30,7 @@ export class AppComponent {
   }
 
   pushArr(){
-    this.arr.push({
+    this.array.push({
 
       this:Date(),
       state:this.show
