@@ -32,7 +32,7 @@ export class AppComponent {
   pushArr(){
     this.array.push({
 
-      this:Date(),
+      time:Date(),
       state:this.show
     });
 
